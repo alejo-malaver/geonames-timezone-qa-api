@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "title": "The Root Schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "required": [
+    "lng",
+    "gmtOffset",
+    "rawOffset",
+    "dstOffset",
+    "lat"
+  ],
+  "properties": {
+    "sunrise": {
+      "$id": "#/properties/sunrise",
+      "type": "string",
+      "title": "Sunrise local time (date)",
+      "examples": [
+        "2021-11-07 06:33"
+      ]
+    },
+    "lng": {
+      "$id": "#/properties/lng",
+      "type": "number",
+      "title": "The length",
+      "examples": [
+        -74.006
+      ]
+    },
+    "countryCode": {
+      "$id": "#/properties/countryCode",
+      "type": "string",
+      "title": "ISO countrycode",
+      "examples": [
+        "US"
+      ]
+    },
+    "gmtOffset": {
+      "$id": "#/properties/gmtOffset",
+      "type": "number",
+      "title": "Offset to GMT at 1. January (deprecated)",
+      "examples": [
+        -5
+      ]
+    },
+    "rawOffset": {
+      "$id": "#/properties/rawOffset",
+      "type": "number",
+      "title": "The amount of time in hours to add to UTC to get standard time in this time zone.",
+      "examples": [
+        -5
+      ]
+    },
+    "sunset": {
+      "$id": "#/properties/sunset",
+      "type": "string",
+      "title": "Sunset local time (date)",
+      "examples": [
+        "2021-11-07 16:45"
+      ]
+    },
+    "timezoneId": {
+      "$id": "#/properties/timezoneId",
+      "type": "string",
+      "title": "Name of the timezone (according to olson), this information is sufficient to work with",
+      "examples": [
+        "America/New_York"
+      ]
+    },
+    "dstOffset": {
+      "$id": "#/properties/dstOffset",
+      "type": "number",
+      "title": "Offset to GMT at 1. July (deprecated)",
+      "examples": [
+        -4
+      ]
+    },
+    "countryName": {
+      "$id": "#/properties/countryName",
+      "type": "string",
+      "title": "Name (language can be set with param lang)",
+      "examples": [
+        "United States"
+      ]
+    },
+    "time": {
+      "$id": "#/properties/time",
+      "type": "string",
+      "title": "The local current time",
+      "examples": [
+        "2021-11-07 16:41"
+      ]
+    },
+    "lat": {
+      "$id": "#/properties/lat",
+      "type": "number",
+      "title": "The latitude",
+      "examples": [
+        40.714
+      ]
+    }
+  }
+}

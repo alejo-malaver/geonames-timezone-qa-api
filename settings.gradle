@@ -1,0 +1,11 @@
+rootProject.name = 'geonames-timezone-qa-api'
+
+dependencyResolutionManagement {
+	repositories {
+		mavenCentral()
+		mavenLocal()
+		maven {
+			url "https://plugins.gradle.org/m2/"
+		}
+	}
+}

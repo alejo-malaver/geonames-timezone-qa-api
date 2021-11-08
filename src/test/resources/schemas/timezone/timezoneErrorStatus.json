@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "title": "The Root Schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "properties": {
+    "status": {
+      "$id": "#/properties/status",
+      "type": "object",
+      "title": "Status detail",
+      "properties": {
+        "message": {
+          "$id": "#/properties/status/message",
+          "type": "string",
+          "title": "Error message detail",
+          "enum": ["no timezone information found for lat/lng",
+            "the daily limit of 20000 credits for demo has been exceeded. Please use an application specific account. Do not use the demo account for your application.",
+            "user account has not been confirmed. Check your email for the confirmation email.",
+            "user does not exist.",
+            "invalid user",
+            "invalid lat/lng",
+            "missing parameter ",
+            "Please add a username to each call in order for geonames to be able to identify the calling application and count the credits usage."]
+        },
+        "value": {
+          "$id": "#/properties/status/value",
+          "type": "integer",
+          "title": "Error message code",
+          "enum": [15, 18, 10, 14]
+        }
+      },
+      "required": [
+        "message",
+        "value"
+      ]
+    }
+  },
+  "required": [
+    "status"
+  ]
+}

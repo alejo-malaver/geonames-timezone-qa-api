@@ -1,0 +1,43 @@
+####################
+# USUARIOS VALIDOS #
+####################
+name: "Yeison"
+user:
+  !co.com.geonames.timezone.qa.api.model.authentication.UserDto
+  username: "qa_mobile_easy"
+---
+name: "Nancy"
+user:
+  !co.com.geonames.timezone.qa.api.model.authentication.UserDto
+  username: "qa_mobile_easy"
+---
+name: "Juan"
+user:
+  !co.com.geonames.timezone.qa.api.model.authentication.UserDto
+  username: "qa_mobile_easy"
+---
+name: "Adriana"
+user:
+  !co.com.geonames.timezone.qa.api.model.authentication.UserDto
+  username: "qa_mobile_easy"
+---
+name: "Andrea"
+user:
+  !co.com.geonames.timezone.qa.api.model.authentication.UserDto
+  username: "demo"
+---
+####################
+# USUARIOS NO CONFIRMADOS #
+####################
+name: "Alejandro"
+user:
+  !co.com.geonames.timezone.qa.api.model.authentication.UserDto
+  username: "alejo"
+---
+####################
+# USUARIOS NO EXISTENTES #
+####################
+name: "Diana"
+user:
+  !co.com.geonames.timezone.qa.api.model.authentication.UserDto
+  username: "qa_mobile_diana"
